@@ -24,8 +24,61 @@
  */
 
 .card {
-  background-color: blue;
+  padding: 0rem, 3rem, 3rem, 3rem;
   color: #fff;
   border-radius: 5px;
-  padding: 15px;
+
 }
+
+.content {
+  
+  position: relative;
+  width: 100%;
+  height: 90%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+
+#defender {
+  position: relative;
+  height: 30%;
+  margin-bottom: 3rem;
+}
+
+.content:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(53, 59, 139);
+  z-index: 10000;
+  mix-blend-mode: color;
+}
+
+
+
+.content img {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.card button {
+  height: 10%;
+  width: 100%;
+  display: block;
+}
+
+.text {
+  position: relative;
+  color: #fff;
+  font-size: 10em;
+  z-index: 1;
+}
+
+
