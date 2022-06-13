@@ -25,7 +25,8 @@
 
 .card {
   color: #fff;
-  border-radius: 25px;
+  border: rgb(0, 0, 0) 3px;
+
 }
 
 .content {
@@ -71,16 +72,13 @@
 }
 
 .card button {
+  background-color: hsl(197, 33%, 83%);
   height: 10%;
   width: 100%;
   display: block;
+  border: 0px;
 }
 
-.text {
-  position: relative;
-  color: #fff;
-  font-size: 10em;
-  z-index: 1;
+.card button:hover {
+  background-color: hsl(198, 16%, 72%);
 }
-
-
