@@ -24,10 +24,8 @@
  */
 
 .card {
-  padding: 0rem, 3rem, 3rem, 3rem;
   color: #fff;
-  border-radius: 5px;
-
+  border-radius: 25px;
 }
 
 .content {
@@ -47,15 +45,19 @@
   margin-bottom: 3rem;
 }
 
-.content:before {
+.content.night:before {
   content: '';
   position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgb(53, 59, 139);
+  background: url(images/bg.jpg);
   z-index: 10000;
   mix-blend-mode: color;
+}
+
+.content.day {
+  background: url(images/sky.jpeg);
 }
 
 
